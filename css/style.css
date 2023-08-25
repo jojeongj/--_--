@@ -13,6 +13,6 @@
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   background-color: blue;
-  box-shadow: 0 4px 12px rgba(0, 79, 255, 0.4);
+  box-shadow: 0 4px 4px rgba(0, 79, 255, 0.4);
   border-radius: 50px;
 }
