@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>모달연습</title>
+    <style>
+      dialog::backdrop {
+        background-color: bisque;
+      }
+      dialog {
+        box-shadow: 0 14px 28px rgba(02, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+        border: 0;
+        padding: 20px 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <button>show modal</button>
+    <dialog>
+      Hello! I'm a modal!
+      <form method="dialog">
+        <button value="close">Close</button>
+        <button value="confirm">Confirm</button>
+      </form>
+    </dialog>
+    <!-- 바디 밑에가 원래 정해진 위치 -->
+    <script>
+      const button = document.querySelector("button");
+      const dialog = document.querySelector("dialog");
+
+      button.addEventListener("click", () => {
+        dialog.showModal();
+        a;
+      });
+
+      dialog.addEventListener("close", () => {
+        console.log(dialog.returnValue);
+      });
+    </script>
+  </body>
+</html>
